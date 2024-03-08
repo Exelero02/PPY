@@ -31,11 +31,10 @@ Write a Python program that takes input from the user to create a list of intege
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
-
+converted_numbers = [int(x) for x in input_numbers.split()]
 
 # Sorting:
-
-
+numbers_list = sorted(converted_numbers)
 # Print Output
 print("Sorted list:", numbers_list)
 
@@ -74,11 +73,13 @@ Extend the previous Python program to include tuples. Now, in addition to creati
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
+converted_numbers = [int(num) for num in input_numbers.split()]
 
+integer_tuple = tuple(converted_numbers)
 
 # Sorting:
-
-
+numbers_list = sorted(converted_numbers)
+sorted_tuple = tuple(numbers_list)
 # Print Output
 print("Sorted list:", numbers_list)
 print("Sorted tuple:", sorted_tuple)
@@ -110,24 +111,34 @@ Extend the previous Python program to demonstrate the manipulation of lists usin
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input
-
+numbers_list = [int(num) for num in input_numbers.split()]
+numbers_tuple = tuple(numbers_list)
 
 # Manipulate List
 #   Append 10 to the list
 #   Insert 20 at index 2
-#   Remove one elementfrom the list
+#   Remove one element from the list
+numbers_list.append(10)
+numbers_list.insert(2,20)
+numbers_list.remove(numbers_list[2])
+
 
 # Attempt to Modify Tuple (this will raise an error)
 try:
     #   Append 10 to the tuple
+    numbers_tuple += (10,)
+
 except AttributeError:
     print("Tuples are immutable and cannot be modified.")
 try:
     #   Insert 20 at index 2
+    numbers_tuple = numbers_tuple[:2] + (20,) + numbers_tuple[2:]
+
 except AttributeError:
     pass  # Insert operation will also raise an error
 try:
     #   Remove one element  from the tuple
+    numbers_tuple = numbers_tuple[:2] + numbers_tuple[3:]
 except AttributeError:
     pass  # Remove operation will also raise an error
 
