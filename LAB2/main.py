@@ -16,7 +16,7 @@ Write a Python program that takes input from the user to create a list of intege
   a. Input: Ask the user to enter a series of space-separated integers.
 
   b. Convert Input: Convert the input string into a list of integers.
-  
+
   c. Sorting: Sort the list in ascending order.
 
   example:
@@ -63,7 +63,7 @@ Extend the previous Python program to include tuples. Now, in addition to creati
   example:
   ```
   Enter a series of space-separated integers: 5 2 8 1 9
-  
+
   Sorted list: [1, 2, 5, 8, 9]
   Sorted tuple: (1, 2, 5, 8, 9)
   ```
@@ -90,11 +90,11 @@ Extend the previous Python program to demonstrate the manipulation of lists usin
   a. Input: Ask the user to enter a series of space-separated integers.
 
   b. Convert Input: Convert the input string into a list of integers and a tuple of integers.
-  
+
   c. Manipulate List: Use the append(), insert(), and remove() functions to modify the list.
-  
+
   d. Attempt to Modify Tuple: Try to modify the tuple using the same operations as the list.
-  
+
   e. Print Output: Print the modified list and attempt to print the modified tuple.
 
   example:
@@ -119,9 +119,8 @@ numbers_tuple = tuple(numbers_list)
 #   Insert 20 at index 2
 #   Remove one element from the list
 numbers_list.append(10)
-numbers_list.insert(2,20)
+numbers_list.insert(2, 20)
 numbers_list.remove(numbers_list[2])
-
 
 # Attempt to Modify Tuple (this will raise an error)
 try:
@@ -213,7 +212,7 @@ input_numbers = input("Enter a series of space-separated integers: ")
 
 # Attempt to Modify Tuple (this will raise an error)
 try:
-    # Append 10 to the tuple
+# Append 10 to the tuple
 except AttributeError:
     print("Tuples are immutable and cannot be modified.")
 
@@ -362,32 +361,32 @@ input_numbers = input("Enter a series of space-separated integers: ")
 student_number = input("Enter your student number: ")
 
 # Write Output to File like this:
-    "Student Number: " + student_number
+"Student Number: " + student_number
 
-    "Original List: " + str(numbers_list)
-    "Original Tuple: " + str(numbers_tuple)
-    "Original Set: " + str(numbers_set)
-    "Original Dictionary: " + str(numbers_dict)
+"Original List: " + str(numbers_list)
+"Original Tuple: " + str(numbers_tuple)
+"Original Set: " + str(numbers_set)
+"Original Dictionary: " + str(numbers_dict)
 
-    "Manipulated List: " + str(numbers_list)
-    "Manipulated Tuple: " + str(numbers_tuple)
-    "Union of Set: " + str(set_union)
-    "Intersection of Set: " + str(set_intersection)
-    "Difference of Set: " + str(set_difference)
-    "Updated Dictionary: " + str(numbers_dict)
+"Manipulated List: " + str(numbers_list)
+"Manipulated Tuple: " + str(numbers_tuple)
+"Union of Set: " + str(set_union)
+"Intersection of Set: " + str(set_intersection)
+"Difference of Set: " + str(set_difference)
+"Updated Dictionary: " + str(numbers_dict)
 
-    "List to Tuple: " + str(list_to_tuple)
-    "List to Set: " + str(list_to_set)
-    "List to Dictionary: " + str(list_to_dict)
-    "Tuple to List: " + str(tuple_to_list)
-    "Tuple to Set: " + str(tuple_to_set)
-    "Tuple to Dictionary: " + str(tuple_to_dict)
-    "Set to List: " + str(set_to_list)
-    "Set to Tuple: " + str(set_to_tuple)
-    "Set to Dictionary: " + str(set_to_dict)
-    "Dictionary to List: " + str(dict_to_list)
-    "Dictionary to Tuple: " + str(dict_to_tuple)
-    "Dictionary to Set: " + str(dict_to_set)
+"List to Tuple: " + str(list_to_tuple)
+"List to Set: " + str(list_to_set)
+"List to Dictionary: " + str(list_to_dict)
+"Tuple to List: " + str(tuple_to_list)
+"Tuple to Set: " + str(tuple_to_set)
+"Tuple to Dictionary: " + str(tuple_to_dict)
+"Set to List: " + str(set_to_list)
+"Set to Tuple: " + str(set_to_tuple)
+"Set to Dictionary: " + str(set_to_dict)
+"Dictionary to List: " + str(dict_to_list)
+"Dictionary to Tuple: " + str(dict_to_tuple)
+"Dictionary to Set: " + str(dict_to_set)
 
 # print "Content of the file:"
 
@@ -454,8 +453,6 @@ These are fundamental constructs in Python programming that enable you to contro
 
   The program will generate the list of prime numbers up to 20, perform calculations, and write the results to 'prime_numbers.txt'.
 """
-
-
 
 """10.
 In the final main.py file, leave the results from task 8 and 9, commit and push
