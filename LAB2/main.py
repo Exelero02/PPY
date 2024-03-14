@@ -563,6 +563,7 @@ except FileNotFoundError:
     print("Error: File 'output.txt' not found.")
     exit()
 
+
 prime_numbers = [num for num in range(2, largest_integer + 1) if is_prime(num)]
 
 print("List of prime numbers up to", largest_integer, ":", prime_numbers)
